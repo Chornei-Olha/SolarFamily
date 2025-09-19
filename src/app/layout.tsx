@@ -7,8 +7,8 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'TRUST-CALL',
-  description: 'Аутсорсинговий кол-центр для товарного бізнесу',
+  title: 'SolarFamily',
+  description: 'Створюємо екологічне майбутнє вже сьогодні',
   icons: {
     icon: [{ url: '/favicon.png', type: 'image/x-icon' }],
   },

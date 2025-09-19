@@ -1,150 +1,71 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black py-14 sm:py-16 md:py-20 lg:py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Social Icons */}
-        <div className="flex justify-center gap-4 mb-12">
-          <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/images/img_vector_white_a700.svg"
-              alt="Facebook"
-              width={48}
-              height={48}
-              className="w-12 h-12 hover:opacity-80 transition"
-            />
-          </Link>
-
-          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/images/img_vector_white_a700_48x48.svg"
-              alt="Twitter"
-              width={48}
-              height={48}
-              className="w-12 h-12 hover:opacity-80 transition"
-            />
-          </Link>
-
-          <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/images/img_vector_48x48.svg"
-              alt="Instagram"
-              width={48}
-              height={48}
-              className="w-12 h-12 hover:opacity-80 transition"
-            />
-          </Link>
-
-          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/images/img_vector_1.svg"
-              alt="LinkedIn"
-              width={48}
-              height={48}
-              className="w-12 h-12 hover:opacity-80 transition"
-            />
-          </Link>
-
-          <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/images/img_vector_2.svg"
-              alt="YouTube"
-              width={48}
-              height={48}
-              className="w-12 h-12 hover:opacity-80 transition"
-            />
-          </Link>
-
-          <Link href="https://t.me" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/images/img_vector_3.svg"
-              alt="Telegram"
-              width={48}
-              height={48}
-              className="w-12 h-12 hover:opacity-80 transition"
-            />
-          </Link>
+    <footer className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white">
+      {/* Нижняя часть с картинкой справа */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-12">
+        {/* Текст слева */}
+        <div className="text-white text-2xl md:text-4xl font-bold">
+          info@solarfamily.ua
+          <p className="mt-4 text-lg md:text-xl font-normal">
+            +38 (067) 726 57 14 <br />
+            Офіс: м.Київ, вул. Волинська, 67
+          </p>
         </div>
 
-        {/* Company Name */}
-        <div className="text-center mb-8">
-          <h2 className="text-[80px] sm:text-[120px] md:text-[160px] lg:text-[180px] font-semibold text-white leading-none text-inter">
-            TRUST-CALL®
-          </h2>
+        {/* Картинка справа */}
+        <div className="relative w-full h-[300px] md:h-[400px]">
+          <Image
+            src="/images/building-2.png"
+            alt="Будівля"
+            fill
+            className="object-cover rounded-lg"
+          />
+          <div className="absolute inset-0 bg-black/40 rounded-lg" />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        {/* Меню */}
+        <div className="flex flex-col gap-2">
+          <a href="#">Головна</a>
+          <a href="#">Про компанію</a>
+          <a href="#">Послуги</a>
+          <a href="#">Проекти</a>
+          <a href="#">Новини</a>
+          <a href="#">Контакти</a>
+          <a href="#">Для партнерів</a>
+          <a href="#">Вакансії</a>
         </div>
 
-        {/* Contact Email */}
-        <div className="text-center mb-8">
+        {/* Соцсети */}
+        <div className="flex gap-4">
           <a
-            href="mailto:trustcallcentr@gmail.com"
-            className="text-[28px] sm:text-[40px] md:text-[56px] lg:text-[70px] font-medium text-white hover:text-[#1663d3] transition-colors font-inter"
+            href="#"
+            className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
           >
-            trustcallcentr@gmail.com
+            Instagram
+          </a>
+          <a
+            href="#"
+            className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+          >
+            Facebook
+          </a>
+          <a
+            href="#"
+            className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+          >
+            LinkedIn
           </a>
         </div>
 
-        {/* Footer Navigation */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-8">
-          <div className="text-[20px] sm:text-[24px] md:text-[30px] font-medium text-white uppercase text-unbounded">
-            TRUST-CALL
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:items-center gap-6 lg:gap-12 text-inter">
-            <a
-              href="#about"
-              className="text-[16px] sm:text-[18px] md:text-[20px] font-bold text-white hover:text-[#1663d3] transition-colors"
-            >
-              Про компанію
-            </a>
-            <a
-              href="#cases"
-              className="text-[16px] sm:text-[18px] md:text-[20px] font-bold text-white hover:text-[#1663d3] transition-colors"
-            >
-              Кейси
-            </a>
-            <a
-              href="#benefits"
-              className="text-[16px] sm:text-[18px] md:text-[20px] font-bold text-white hover:text-[#1663d3] transition-colors"
-            >
-              Переваги співпраці
-            </a>
-            <a
-              href="#pricing"
-              className="text-[16px] sm:text-[18px] md:text-[20px] font-bold text-white hover:text-[#1663d3] transition-colors"
-            >
-              Тарифи
-            </a>
-            <a
-              href="#reviews"
-              className="text-[16px] sm:text-[18px] md:text-[20px] font-bold text-white hover:text-[#1663d3] transition-colors"
-            >
-              Відгуки
-            </a>
-          </div>
-        </div>
-
-        {/* Footer Bottom */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-6 pt-8 border-t border-white/20">
-          <div className="space-y-2">
-            <p className="text-[12px] font-bold text-white">
-              <a href="tel:+380971552677" className="hover:underline">
-                +380971552677
-              </a>{' '}
-              ( Олександр Х. – власник )<br />
-              <a href="tel:+380963411753" className="hover:underline">
-                +380963411753
-              </a>{' '}
-              ( Олександр Ш. – директор )
-            </p>
-          </div>
-          <div className="space-y-2">
-            <p className="text-[12px] font-bold text-white">
-              ФОП Худомака Олександр Сергійович, ДРФО 3568912297, м. Одеса,
-              <br />
-              вул. Люстдорфська дорога, 140
-            </p>
-          </div>
+        {/* Политика */}
+        <div className="text-right text-sm opacity-70">
+          <p>2025 © Всі права захищені. ТОВ «Solar Family»</p>
+          <a href="#" className="underline">
+            Політика конфіденційності
+          </a>
         </div>
       </div>
     </footer>
