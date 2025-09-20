@@ -16,13 +16,16 @@ export default function Header() {
     <header className="absolute top-0 left-0 w-full z-30">
       <div className="container mx-auto flex justify-between items-center px-6 sm:px-8 lg:px-10 py-6">
         {/* Логотип */}
-        <Image
-          src="/images/logo.svg"
-          alt="logo"
-          width={215}
-          height={80}
-          className="w-[150px] sm:w-[215px] h-auto"
-        />
+        <Link href="/" aria-label="На головну">
+          <Image
+            src="/images/logo.svg"
+            alt="logo"
+            width={215}
+            height={80}
+            className="w-[150px] sm:w-[215px] h-auto"
+            priority
+          />
+        </Link>
 
         {/* Бургер / крестик */}
         <button
@@ -40,7 +43,6 @@ export default function Header() {
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
-
         {/* Ссылки */}
         <nav className="flex-1 flex flex-col justify-center items-center gap-8 text-2xl">
           <Link href="/" onClick={() => setMenuOpen(false)}>
