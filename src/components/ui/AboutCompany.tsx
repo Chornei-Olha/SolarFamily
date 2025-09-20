@@ -1,7 +1,7 @@
 export default function AboutCompany() {
   const stats = [
     {
-      number: '1000+',
+      number: '700+',
       text: 'Реалізувала більше 700 проєктів сонячних електростанцій',
     },
     {
@@ -19,7 +19,7 @@ export default function AboutCompany() {
   ];
 
   return (
-    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white font-regular ">
+    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white font-normal ">
       <h2 className="text-2xl md:text-3xl mb-8 md:mb-16">Про компанію</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
         {stats.map((item, i) => (

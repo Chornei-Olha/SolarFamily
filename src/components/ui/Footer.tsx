@@ -1,21 +1,68 @@
 import Image from 'next/image';
+import { Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white">
       {/* Нижняя часть с картинкой справа */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 font-normal items-stretch">
         {/* Текст слева */}
-        <div className="text-white text-2xl md:text-4xl font-bold">
-          info@solarfamily.ua
-          <p className="mt-4 text-lg md:text-xl font-normal">
-            +38 (067) 726 57 14 <br />
+        <div className="md:col-span-2 flex flex-col justify-between h-full gap-8">
+          <p className="text-2xl md:text-[50px]">info@solarfamily.ua</p>
+          <a
+            href="tel:+380677265714"
+            className="flex items-center gap-3 text-lg md:text-[30px] text-white hover:text-[#A4AA9C] transition"
+          >
+            <Phone size={24} className="flex-shrink-0" />
+            +38 (067) 726 57 14
+          </a>{' '}
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=м.Київ, вул. Волинська, 67"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg md:text-[30px] text-white hover:text-[#A4AA9C]"
+          >
             Офіс: м.Київ, вул. Волинська, 67
-          </p>
+          </a>
+          <div className="flex flex-col gap-8">
+            {/* Меню */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <a href="#">Головна</a>
+              <a href="#">Проєкти</a>
+              <a href="#">Новини</a>
+              <a href="#">Для партнерів</a>
+              <a href="#">Про компанію</a>
+              <a href="#">Послуги</a>
+              <a href="#">Контакти</a>
+              <a href="#">Вакансії</a>
+            </div>
+
+            {/* Соцсети */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#"
+                className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+              >
+                Instagram
+              </a>
+              <a
+                href="#"
+                className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+              >
+                Facebook
+              </a>
+              <a
+                href="#"
+                className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Картинка справа */}
-        <div className="relative w-full h-[300px] md:h-[400px]">
+        <div className="col-span-1 relative w-full h-[300px] md:h-[400px]">
           <Image
             src="/images/building-2.png"
             alt="Будівля"
@@ -24,49 +71,13 @@ export default function Footer() {
           />
           <div className="absolute inset-0 bg-black/40 rounded-lg" />
         </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-        {/* Меню */}
-        <div className="flex flex-col gap-2">
-          <a href="#">Головна</a>
-          <a href="#">Про компанію</a>
-          <a href="#">Послуги</a>
-          <a href="#">Проекти</a>
-          <a href="#">Новини</a>
-          <a href="#">Контакти</a>
-          <a href="#">Для партнерів</a>
-          <a href="#">Вакансії</a>
-        </div>
-
-        {/* Соцсети */}
-        <div className="flex gap-4">
-          <a
-            href="#"
-            className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
-          >
-            Instagram
-          </a>
-          <a
-            href="#"
-            className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
-          >
-            Facebook
-          </a>
-          <a
-            href="#"
-            className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
-          >
-            LinkedIn
-          </a>
-        </div>
-
-        {/* Политика */}
-        <div className="text-right text-sm opacity-70">
-          <p>2025 © Всі права захищені. ТОВ «Solar Family»</p>
-          <a href="#" className="underline">
-            Політика конфіденційності
-          </a>
-        </div>
+      </div>{' '}
+      {/* Политика */}
+      <div className="flex flex-col sm:flex-row justify-between text-sm mt-10 sm:mt-16">
+        <p>2025 © Всі права захищені. ТОВ «Solar Family»</p>
+        <a href="#" className="underline">
+          Політика конфіденційності
+        </a>
       </div>
     </footer>
   );

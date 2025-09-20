@@ -1,11 +1,13 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { Menu } from 'lucide-react';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import Header from './Header';
 
 const slides = ['/images/slide1.png', '/images/slide2.jpg', '/images/bgStarlink.png'];
 
-export default function HeroSection() {
+export default function HeroBusiness() {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -19,6 +21,7 @@ export default function HeroSection() {
     <section className="relative h-[800px] sm:h-screen w-full overflow-hidden">
       {/* Слайды */}
       <div className="absolute inset-0">
+        {' '}
         {slides.map((src, i) => (
           <div
             key={i}
@@ -44,24 +47,8 @@ export default function HeroSection() {
 
       {/* Контент */}
       <div className="container mx-auto relative z-10 flex flex-col h-full text-white py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10">
-        {/* Центр: текст */}
-        <div className="flex-1 flex items-center">
-          <div>
-            <p className="uppercase text-sm tracking-widest mb-2">Interior Design</p>
-            <h2 className="text-3xl md:text-5xl font-semibold mb-6 sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw]">
-              Створюємо екологічне майбутнє вже сьогодні
-            </h2>
-            <button className="flex gap-4 items-center bg-[#A4AA9C] text-black px-5 py-3 rounded-[50px] font-semibold shadow-lg hover:bg-gray-200 transition">
-              <span className="w-8 h-8 flex items-center justify-center bg-white rounded-full">
-                <ArrowRight size={18} className="text-black" />
-              </span>
-              <span>Детальніше</span>
-            </button>
-          </div>
-        </div>
-
         {/* Низ: соцсети */}
-        <div className="flex flex-col gap-2 pb-10 text-white/60">
+        <div className="absolute top-2/3 left-6 -translate-y-1/2 flex flex-col gap-4 text-white/60 z-20">
           <a href="#" className="hover:text-white">
             Fb.
           </a>
@@ -75,20 +62,18 @@ export default function HeroSection() {
             Pl.
           </a>
         </div>
-      </div>
-      {/* Низ: текст */}
-      <div className="absolute bottom-0 right-0 w-1/2 flex flex-col sm:flex-row gap-5 bg-[#D2D6D5] p-3 sm:p-10">
-        <div className="flex flex-col">
-          <p>01.</p>
-          <p>Lorem ipsum dolor</p>
-        </div>
-        <div className="flex flex-col">
-          <p>02.</p>
-          <p>Lorem ipsum dolor</p>
-        </div>
-        <div className="flex flex-col">
-          <p>03.</p>
-          <p>Lorem ipsum dolor</p>
+        {/* Центр: текст */}
+        <div className="flex-1 flex items-end">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-10 w-[90vw] text-center">
+              Сонячна електростанція для Вашого бізнесу{' '}
+            </h2>{' '}
+            <p className="text-sm md:text-xl tracking-widest w-[90vw] text-center">
+              Зниження залежності від комунальних енергопостачальних компаній, економія на рахунках
+              за електроенергію та зменшення впливу на довкілля шляхом використання відновлювального
+              джерела енергії.
+            </p>
+          </div>
         </div>
       </div>
     </section>

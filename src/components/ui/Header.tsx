@@ -1,100 +1,72 @@
 'use client';
-
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from '../ui/Button';
-import { Menu, X } from 'lucide-react'; // иконки для бургера
-
-const navLinks = [
-  { href: '#about', label: 'Про компанію' },
-  { href: '#cases', label: 'Кейси' },
-  { href: '#benefits', label: 'Переваги співпраці' },
-  { href: '#pricing', label: 'Тарифи' },
-  { href: '#reviews', label: 'Відгуки' },
-];
+import clsx from 'clsx';
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
+  }, [menuOpen]);
 
   return (
-    <header className="bg-black/40 backdrop-blur-[5px] z-[9999] w-full px-4 sm:px-6 lg:px-8 py-2 sm:py-4 fixed">
-      <div className="max-w-[1440px] mx-auto flex justify-between items-center">
+    <header className="absolute top-0 left-0 w-full z-30">
+      <div className="container mx-auto flex justify-between items-center px-6 sm:px-8 lg:px-10 py-6">
         {/* Логотип */}
-        <Link
-          href="/"
-          className="text-[20px] sm:text-[24px] md:text-[30px] font-medium font-unbounded text-white uppercase tracking-wider"
+        <Image
+          src="/images/logo.svg"
+          alt="logo"
+          width={215}
+          height={80}
+          className="w-[150px] sm:w-[215px] h-auto"
+        />
+
+        {/* Бургер / крестик */}
+        <button
+          className="p-2 text-white z-40 relative"
+          onClick={() => setMenuOpen((prev) => !prev)}
         >
-          TRUST-CALL
-        </Link>
-
-        {/* Desktop меню */}
-        <div className="hidden lg:flex items-center gap-12">
-          <nav className="flex gap-8 text-inter">
-            {navLinks.map((link, i) => (
-              <a
-                key={i}
-                href={link.href}
-                className="text-[16px] font-bold text-white hover:text-[#1663d3] transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-          <Button
-            variant="brand"
-            size="sm"
-            className="text-[9px] font-medium font-unbounded uppercase tracking-wider px-3 py-3"
-            onClick={() => {
-              const formEl = document.getElementById('form');
-              if (formEl) {
-                formEl.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-          >
-            отримати консультацію
-          </Button>
-        </div>
-
-        {/* Mobile бургер */}
-        <div className="lg:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
+          {menuOpen ? <X size={32} /> : <Menu size={28} />}
+        </button>
       </div>
 
-      {/* Mobile выпадающее меню */}
-      {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-md py-6 px-4">
-          <nav className="flex flex-col gap-6 text-center text-inter">
-            {navLinks.map((link, i) => (
-              <a
-                key={i}
-                href={link.href}
-                onClick={() => setIsOpen(false)} // закрывать меню при клике
-                className="text-[18px] font-bold text-white hover:text-[#1663d3] transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-          <div className="mt-8 flex justify-center">
-            <Button
-              variant="brand"
-              size="sm"
-              className="text-[9px] font-medium font-unbounded uppercase tracking-wider px-3 py-3"
-              onClick={() => {
-                const formEl = document.getElementById('form');
-                if (formEl) {
-                  formEl.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              отримати консультацію
-            </Button>
-          </div>
-        </div>
+      {/* Меню */}
+      <div
+        className={clsx(
+          'fixed inset-y-0 right-0 w-3/4 sm:w-1/2 bg-black/90 text-white transform transition-transform duration-500 ease-in-out z-30 flex flex-col',
+          menuOpen ? 'translate-x-0' : 'translate-x-full'
+        )}
+      >
+
+        {/* Ссылки */}
+        <nav className="flex-1 flex flex-col justify-center items-center gap-8 text-2xl">
+          <Link href="/" onClick={() => setMenuOpen(false)}>
+            Головна
+          </Link>
+          <Link href="/network" onClick={() => setMenuOpen(false)}>
+            Мережева сонячна електростанція
+          </Link>
+          <Link href="/business" onClick={() => setMenuOpen(false)}>
+            Сонячна електростанція для Вашого бізнесу{' '}
+          </Link>
+          <Link href="/about" onClick={() => setMenuOpen(false)}>
+            Про компанію
+          </Link>
+          <Link href="/case" onClick={() => setMenuOpen(false)}>
+            Реалізовані проекти
+          </Link>
+          <Link href="/aboutProduct" onClick={() => setMenuOpen(false)}>
+            Про сонячні електростанції
+          </Link>
+        </nav>
+      </div>
+
+      {/* Затемнение позади меню */}
+      {menuOpen && (
+        <div className="fixed inset-0 bg-black/50 z-20" onClick={() => setMenuOpen(false)} />
       )}
     </header>
   );
