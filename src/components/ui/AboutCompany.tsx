@@ -19,8 +19,8 @@ export default function AboutCompany() {
   ];
 
   return (
-    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white font-normal ">
-      <h2 className="text-2xl md:text-3xl mb-8 md:mb-16">Про компанію</h2>
+    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white font-normal ">
+      <h2 className="text-2xl md:text-3xl mb-8 md:mb-16 font-abel font-normal">Про компанію</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
         {stats.map((item, i) => (
           <div
@@ -32,8 +32,12 @@ export default function AboutCompany() {
         ${i % 2 === 0 ? 'border-r' : ''}   /* вертикальные линии */
       `}
           >
-            <span className="text-4xl lg:text-[137px] mb-4 leading-none">{item.number}</span>
-            <p className="text-sm lg:text-[20px] opacity-80 leading-snug">{item.text}</p>
+            <span className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl mb-4 leading-none font-abel font-normal">
+              {item.number}
+            </span>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl opacity-80 leading-snug font-abel font-normal">
+              {item.text}
+            </p>
           </div>
         ))}
       </div>

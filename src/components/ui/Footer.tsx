@@ -3,12 +3,12 @@ import { Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white">
+    <footer className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
       {/* Нижняя часть с картинкой справа */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 font-normal items-stretch">
         {/* Текст слева */}
         <div className="md:col-span-2 flex flex-col justify-between h-full gap-8">
-          <p className="text-2xl md:text-[50px]">info@solarfamily.ua</p>
+          <p className="text-2xl md:text-[50px] font-actor">info@solarfamily.ua</p>
           <a
             href="tel:+380677265714"
             className="flex items-center gap-3 text-lg md:text-[30px] text-white hover:text-[#A4AA9C] transition"

@@ -57,8 +57,10 @@ const projects: Project[] = [
 
 export default function Gallery() {
   return (
-    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10">
-      <h2 className="text-center text-2xl font-semibold mb-6">ПРОЄКТИ</h2>
+    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 border-t border-gray-600">
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl mb-9 font-montserrat font-normal">
+        ПРОЄКТИ
+      </h2>
 
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
         {projects.map((project) => (

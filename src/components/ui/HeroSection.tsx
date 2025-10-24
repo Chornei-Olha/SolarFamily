@@ -47,21 +47,23 @@ export default function HeroSection() {
         {/* Центр: текст */}
         <div className="flex-1 flex items-center">
           <div>
-            <p className="uppercase text-sm tracking-widest mb-2">Interior Design</p>
-            <h2 className="text-3xl md:text-5xl font-semibold mb-6 sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw]">
+            <p className="uppercase text-sm tracking-widest mb-2 font-poppins font-normal">
+              Interior Design
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-12 sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw] font-poppins font-normal">
               Створюємо екологічне майбутнє вже сьогодні
             </h2>
-            <button className="flex gap-4 items-center bg-[#A4AA9C] text-black px-5 py-3 rounded-[50px] font-semibold shadow-lg hover:bg-gray-200 transition">
+            <button className="flex gap-4 items-center bg-[#A4AA9C] text-black px-5 py-3 rounded-[50px] font-poppins font-normal shadow-lg hover:bg-gray-200 transition">
               <span className="w-8 h-8 flex items-center justify-center bg-white rounded-full">
                 <ArrowRight size={18} className="text-black" />
               </span>
-              <span>Детальніше</span>
+              <span className="font-poppins font-normal">Детальніше</span>
             </button>
           </div>
         </div>
 
         {/* Низ: соцсети */}
-        <div className="flex flex-col gap-2 pb-10 text-white/60">
+        <div className="flex flex-col gap-2 pb-10 text-white/60 font-poppins font-normal">
           <a href="#" className="hover:text-white">
             Fb.
           </a>
@@ -77,7 +79,7 @@ export default function HeroSection() {
         </div>
       </div>
       {/* Низ: текст */}
-      <div className="absolute bottom-0 right-0 w-1/2 flex flex-col sm:flex-row gap-5 bg-[#D2D6D5] p-3 sm:p-10">
+      <div className="absolute bottom-0 right-0 w-1/2 flex flex-col sm:flex-row gap-5 bg-[#D2D6D5] p-3 sm:p-10 font-poppins font-normal justify-between">
         <div className="flex flex-col">
           <p>01.</p>
           <p>Lorem ipsum dolor</p>

@@ -47,7 +47,10 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        unbounded: ['Unbounded', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        actor: ['Actor', 'sans-serif'],
+        abel: ['Abel', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

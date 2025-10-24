@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import clsx from 'clsx';
@@ -27,12 +26,40 @@ export default function Header() {
           />
         </Link>
 
-        {/* Бургер / крестик */}
+        {/* Кнопка бургер + Меню */}
         <button
-          className="p-2 text-white z-40 relative"
+          className="flex items-center gap-2 text-white z-40 relative group"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
-          {menuOpen ? <X size={32} /> : <Menu size={28} />}
+          {/* Кастомный бургер */}
+          <div className="relative w-8 h-6 flex flex-col justify-between items-end transition-transform duration-300 group-hover:scale-110">
+            <span
+              className={clsx(
+                'block h-[3px] bg-white rounded-full transition-all duration-300 origin-center',
+                'group-hover:w-[110%] group-hover:bg-yellow-400',
+                menuOpen ? 'rotate-45 translate-y-[9px] w-full' : 'w-full'
+              )}
+            />
+            <span
+              className={clsx(
+                'block h-[3px] bg-white rounded-full transition-all duration-300',
+                'group-hover:w-[70%] group-hover:bg-yellow-400',
+                menuOpen ? 'opacity-0 w-3/4' : 'w-3/5'
+              )}
+            />
+            <span
+              className={clsx(
+                'block h-[3px] bg-white rounded-full transition-all duration-300 origin-center',
+                'group-hover:w-[110%] group-hover:bg-yellow-400',
+                menuOpen ? '-rotate-45 -translate-y-[9px] w-full' : 'w-full'
+              )}
+            />
+          </div>
+
+          {/* Текст справа */}
+          <span className="text-sm tracking-wide select-none group-hover:text-yellow-400 transition-colors duration-300">
+            Меню
+          </span>
         </button>
       </div>
 
@@ -43,8 +70,7 @@ export default function Header() {
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
-        {/* Ссылки */}
-        <nav className="flex-1 flex flex-col justify-center items-center gap-8 text-2xl">
+        <nav className="flex-1 flex flex-col justify-center items-left pl-16 gap-8 text-base sm:text-lg md:text-xl lg:text-2xl font-montserrat font-normal">
           <Link href="/" onClick={() => setMenuOpen(false)}>
             Головна
           </Link>
@@ -52,7 +78,7 @@ export default function Header() {
             Мережева сонячна електростанція
           </Link>
           <Link href="/business" onClick={() => setMenuOpen(false)}>
-            Сонячна електростанція для Вашого бізнесу{' '}
+            Сонячна електростанція для Вашого бізнесу
           </Link>
           <Link href="/about" onClick={() => setMenuOpen(false)}>
             Про компанію

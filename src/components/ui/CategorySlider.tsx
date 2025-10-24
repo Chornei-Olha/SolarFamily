@@ -1,37 +1,3 @@
-// // app/components/CategorySlider.tsx
-// 'use client';
-
-// const categories = [
-//   'ПРОЄКТУВАННЯ',
-//   'СЕРВІС',
-//   'КЛІНІНГ',
-//   'ФІНАНСУВАННЯ',
-//   'ІНВЕСТИЦІЇ',
-//   'ПРОЄКТУВАННЯ-2',
-//   'СЕРВІС-2',
-//   'КЛІНІНГ-2',
-//   'ФІНАНСУВАННЯ-2',
-//   'ІНВЕСТИЦІЇ-2',
-// ];
-
-// export default function CategorySlider() {
-//   return (
-//     <section className="w-full px-4 py-6">
-//       <div className="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
-//         {categories.map((cat, idx) => (
-//           <div
-//             key={idx}
-//             className="flex-shrink-0 snap-center w-40 h-24 bg-white rounded-md shadow flex items-center justify-center text-sm font-medium"
-//           >
-//             {cat}
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-// app/components/CategorySlider.tsx
 'use client';
 
 import { useRef } from 'react';
@@ -67,7 +33,7 @@ export default function CategorySlider() {
   };
 
   return (
-    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10">
+    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10">
       <div className=" relative">
         {/* Prev кнопку показываем только на md+ */}
         <button
@@ -116,11 +82,11 @@ export default function CategorySlider() {
                 <div className="w-5 sm:w-10 h-5 sm:h-10 border border-none flex items-center justify-center rounded-sm">
                   {/* стрелка вверх-вправо (NE) */}
                   <svg
-                    className="w-4 h-4"
+                    className="w-8 h-8"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="black"
-                    strokeWidth="2.5"
+                    strokeWidth="1"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     aria-hidden
@@ -136,7 +102,7 @@ export default function CategorySlider() {
               </div>
 
               {/* Нижний левый угол: название */}
-              <div className="absolute bottom-3 left-3 text-sm font-medium text-neutral-900">
+              <div className="absolute bottom-3 left-3 text-sm md:text-base lg:text-lg text-neutral-900 font-light">
                 {c.title}
               </div>
             </a>

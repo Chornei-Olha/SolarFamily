@@ -1,5 +1,11 @@
 import React from 'react';
 import '../styles/index.css';
+import { Actor, Abel, Poppins } from 'next/font/google';
+
+// Імпорт шрифтів
+const actor = Actor({ subsets: ['latin'], weight: '400' });
+const abel = Abel({ subsets: ['latin'], weight: '400' });
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'] });
 
 export const viewport = {
   width: 'device-width',
