@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Header from './Header';
 
-const slides = ['/images/slide1.png', '/images/slide2.jpg', '/images/bgStarlink.png'];
+const slides = ['/images/slide1.png', '/images/slide2.jpg', '/images/slide3.jpg'];
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);

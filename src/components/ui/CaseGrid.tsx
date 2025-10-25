@@ -26,7 +26,7 @@ const cases: CaseItem[] = [
   {
     id: 3,
     title: 'Сонячна електростанція - єдине надійне рішення при відключенні електроенергії',
-    image: '/images/bgStarlink.png',
+    image: '/images/slide3.jpg',
     link: '/case/3',
   },
   {
@@ -44,7 +44,7 @@ const cases: CaseItem[] = [
   {
     id: 6,
     title: 'Сонячна електростанція - єдине надійне рішення при відключенні електроенергії',
-    image: '/images/bgStarlink.png',
+    image: '/images/slide3.jpg',
     link: '/case/6',
   },
 ];
