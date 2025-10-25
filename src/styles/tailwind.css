@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  html,
+  body {
+    @apply font-abel;
+  }
+}
+
+@layer base {
   :root {
     /* Background Colors */
     --bg-primary: #000000;
@@ -221,10 +228,4 @@
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-@layer base {
-  html,
-  body {
-    @apply font-abel;
-  }
 }
