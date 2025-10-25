@@ -18,7 +18,7 @@ export default function HeroAboutProduct() {
   }, []);
 
   return (
-    <section className="relative h-[800px] sm:h-screen w-full overflow-hidden">
+    <section className="relative min-h-[800px] h-screen w-full overflow-hidden">
       {/* Слайды */}
       <div className="absolute inset-0">
         {' '}
@@ -53,7 +53,7 @@ export default function HeroAboutProduct() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 w-[90vw] font-actor font-normal sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw]">
               Розповідаємо про сонячні електростанції{' '}
             </h2>{' '}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[50vw] text-left font-actor font-normal">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[90vw] text-left font-actor font-normal">
               Ділимось знаннями та розкриваємо секрети успішної роботи сонячної електростанції
             </p>
           </div>

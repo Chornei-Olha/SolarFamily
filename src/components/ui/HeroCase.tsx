@@ -18,7 +18,7 @@ export default function HeroCase() {
   }, []);
 
   return (
-    <section className="relative h-[800px] sm:h-screen w-full overflow-hidden">
+    <section className="relative min-h-[800px] h-screen w-full overflow-hidden">
       {/* Слайды */}
       <div className="absolute inset-0">
         {' '}
@@ -53,7 +53,7 @@ export default function HeroCase() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 w-[90vw] font-actor font-normal sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw]">
               Реалізовані проекти{' '}
             </h2>{' '}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[50vw] text-left font-actor font-normal">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[90vw] text-left font-actor font-normal">
               У кожному проєкті ми підбираємо оптимальне рішення відповідно до потреб замовника,
               забезпечуємо якісний монтаж та гарантійну підтримку. Дивіться наші кейси та
               переконайтеся, що «Solar Family» — це надійний партнер у сфері відновлюваної

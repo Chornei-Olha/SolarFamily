@@ -67,7 +67,7 @@ export default function SolarSlider() {
         <Swiper
           modules={[Navigation]}
           spaceBetween={40}
-          slidesPerView={2}
+          slidesPerView={1.3}
           navigation={{
             nextEl: '.swiper-button-next-custom',
             prevEl: '.swiper-button-prev-custom',
@@ -79,7 +79,7 @@ export default function SolarSlider() {
           {data.map((item) => (
             <SwiperSlide key={item.id}>
               <div
-                className="relative h-[600px] overflow-hidden shadow-lg rounded-xl"
+                className="relative h-[460px] sm:h-[600px] overflow-hidden shadow-lg rounded-xl"
                 style={{
                   backgroundImage: `url(${item.image})`,
                   backgroundSize: 'cover',

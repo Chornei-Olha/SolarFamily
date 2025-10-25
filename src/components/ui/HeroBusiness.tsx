@@ -18,7 +18,7 @@ export default function HeroBusiness() {
   }, []);
 
   return (
-    <section className="relative h-[800px] sm:h-screen w-full overflow-hidden">
+    <section className="relative min-h-[800px] h-screen w-full overflow-hidden">
       {/* Слайды */}
       <div className="absolute inset-0">
         {' '}
@@ -63,7 +63,7 @@ export default function HeroBusiness() {
           </a>
         </div>
         {/* Центр: текст */}
-        <div className="flex-1 flex items-end">
+        <div className="flex-1 flex items-center sm:items-end">
           <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 w-[90vw] text-center font-actor font-normal">
               Сонячна електростанція для Вашого бізнесу{' '}

@@ -16,7 +16,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative min-h-[800px] h-screen w-full overflow-hidden">
       {/* Слайды */}
       <div className="absolute inset-0">
         {slides.map((src, i) => (
