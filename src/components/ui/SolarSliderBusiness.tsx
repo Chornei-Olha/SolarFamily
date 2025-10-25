@@ -53,11 +53,11 @@ const data: SolarCard[] = [
 
 export default function SolarSliderBusiness() {
   return (
-    <div className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 relative">
-      <h2 className="text-2xl md:text-3xl font-normal mb-6 text-white">
+    <div className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 relative">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-actor font-normal mb-6 text-white">
         Принцип роботи мережевої СЕС
       </h2>
-      <p className="text-gray-300 max-w-3xl mb-10">
+      <p className="max-w-3xl mb-10 text-sm sm:text-base md:text-lg lg:text-xl font-actor font-normal">
         У світлий час доби фотомодулі генерують сонячну енергію, яку інвертор перетворює на змінний
         струм, придатний для використання в побуті. Спершу ця електроенергія забезпечує потреби
         домогосподарства, а все, що не споживається – автоматично надходить у зовнішню мережу.
@@ -65,7 +65,9 @@ export default function SolarSliderBusiness() {
       </p>
 
       <div className="relative">
-        <p className="text-2xl md:text-3xl font-normal mb-6 text-white">Обирайте готові рішення</p>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-actor font-normal mb-6 text-white">
+          Обирайте готові рішення
+        </p>
         <Swiper
           modules={[Navigation]}
           spaceBetween={40}
@@ -91,7 +93,7 @@ export default function SolarSliderBusiness() {
                   backgroundPosition: 'center',
                 }}
               >
-                <div className="absolute inset-0 bg-black/50 p-6 flex flex-col justify-between">
+                <div className="absolute inset-0 bg-black/50 p-6 flex flex-col justify-between font-montserrat">
                   <div>
                     <h3 className="text-xl md:text-4xl font-normal text-white">{item.title}</h3>
                   </div>

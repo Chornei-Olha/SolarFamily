@@ -44,7 +44,7 @@ export default function TextAbout() {
   ];
 
   return (
-    <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8 text-white">
+    <div className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
       {/* Заголовок */}
       <h2 className="text-lg sm:text-xl lg:text-2xl font-normal max-w-4xl mb-10 mx-auto text-center">
         Ви все ще вагаєтесь, чи варто співпрацювати з нами? Перегляньте причини, чому варто обрати

@@ -52,11 +52,11 @@ const data: SolarCard[] = [
 
 export default function SolarSlider() {
   return (
-    <div className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 relative">
-      <h2 className="text-2xl md:text-3xl font-normal mb-6 text-white">
+    <div className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 relative">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-actor font-normal mb-6 text-white">
         Принцип роботи мережевої СЕС
       </h2>
-      <p className="text-gray-300 max-w-3xl mb-10">
+      <p className="max-w-3xl mb-10 text-sm sm:text-base md:text-lg lg:text-xl font-actor font-normal">
         У світлий час доби фотомодулі генерують сонячну енергію, яку інвертор перетворює на змінний
         струм, придатний для використання в побуті. Спершу ця електроенергія забезпечує потреби
         домогосподарства, а все, що не споживається – автоматично надходить у зовнішню мережу.
@@ -86,15 +86,15 @@ export default function SolarSlider() {
                   backgroundPosition: 'center',
                 }}
               >
-                <div className="absolute inset-0 bg-black/50 p-6 flex flex-col justify-between">
+                <div className="absolute inset-0 bg-black/50 p-6 flex flex-col justify-between font-montserrat">
                   <div>
-                    <h3 className="text-xl md:text-4xl font-bold text-white">{item.title}</h3>
-                    <p className="text-sm md:text-lg text-gray-300">{item.subtitle}</p>
-                    <p className="text-sm md:text-lg mt-2 text-gray-200">{item.description}</p>
+                    <h3 className="text-xl md:text-4xl font-normal text-white">{item.title}</h3>
+                    <p className="text-sm md:text-lg">{item.subtitle}</p>
+                    <p className="text-sm md:text-lg mt-6">{item.description}</p>
                   </div>
                   <div className="text-center">
                     <Link href={item.pdf} download>
-                      <button className="text-sm mb-4 py-4 px-6 rounded-[40px] bg-white text-black hover:bg-gray-200">
+                      <button className="font-montserrat text-sm mb-4 py-4 px-6 rounded-[40px] bg-white text-black hover:bg-gray-200">
                         Завантажити пропозицію
                       </button>
                     </Link>

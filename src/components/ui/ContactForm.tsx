@@ -36,12 +36,14 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white">
+    <div className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Левая часть */}
         <div>
-          <h2 className="text-3xl sm:text-5xl font-normal mb-5">Потрібен унікальний проект?</h2>
-          <p className="text-base sm:text-xl font-normal">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-actor font-normal mb-6">
+            Потрібен унікальний проект?
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-actor font-normal">
             Сонячна електростанція на підприємстві дозволяє знизити або повністю мінімізувати
             споживання енергії із зовнішньої мережі
           </p>
@@ -50,7 +52,7 @@ export default function ContactForm() {
         {/* Правая часть (Форма) */}
         <form ref={formRef} onSubmit={sendEmail} className="flex flex-col gap-4">
           <div>
-            <label htmlFor="user_name" className="block mb-2 text-base font-bold">
+            <label htmlFor="user_name" className="block mb-2 text-base font-semibold">
               Ім’я*
             </label>
             <input
@@ -64,7 +66,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="user_phone" className="block mb-2 text-base font-bold">
+            <label htmlFor="user_phone" className="block mb-2 text-base font-semibold">
               Номер телефону
             </label>
             <input

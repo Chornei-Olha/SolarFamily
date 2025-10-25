@@ -47,11 +47,11 @@ const projects = [
 
 export default function ProjectsSlider() {
   return (
-    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white">
+    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
       <div>
         {/* Текст */}
         <div className="flex items-center justify-end">
-          <p className="text-right text-white text-xl md:text-4xl max-w-6xl pb-16">
+          <p className="text-right text-white text-xl sm:tex-xl md:text-3xl lg:text-4xl max-w-6xl pb-12 sm:pb-16 md:pb-28 lg:pb-32 font-actor font-normal">
             SOLAR FAMILY – компанія, яка генерує екологічне сонячне майбутнє для українських сімей
             та бізнесів.
           </p>

@@ -41,7 +41,7 @@ const projects = [
 
 export default function PhotoSlider() {
   return (
-    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white">
+    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
       <div>
         <div className="relative">
           <Swiper

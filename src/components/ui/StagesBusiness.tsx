@@ -35,7 +35,7 @@ export default function StagesBusiness() {
   ];
 
   return (
-    <div className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white">
+    <div className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
       <div>
         <h2 className="text-xl md:text-5xl font-light text-left mb-12">ЕТАПИ СПІВПРАЦІ</h2>
         <div className="space-y-12">

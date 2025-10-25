@@ -50,10 +50,10 @@ export default function HeroAboutProduct() {
         {/* Центр: текст */}
         <div className="flex-1 flex items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-10 sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 w-[90vw] font-actor font-normal sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw]">
               Розповідаємо про сонячні електростанції{' '}
             </h2>{' '}
-            <p className="text-sm md:text-xl tracking-widest w-full sm:w-[50vw]">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[50vw] text-left font-actor font-normal">
               Ділимось знаннями та розкриваємо секрети успішної роботи сонячної електростанції
             </p>
           </div>

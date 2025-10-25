@@ -65,10 +65,10 @@ export default function HeroNetwork() {
         {/* Центр: текст */}
         <div className="flex-1 flex items-end">
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-10 w-[90vw] text-center">
-              Мережева сонячна електростанція{' '}
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 w-[90vw] text-center font-actor font-normal">
+              Мережева сонячна електростанція{' '}
             </h2>{' '}
-            <p className="text-sm md:text-xl tracking-widest w-[90vw] text-center">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[90vw] text-center font-actor font-normal">
               Вигідне рішення для тих, хто бажає отримувати пасивний дохід від електростанції та
               економити на комунальних витратах
             </p>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Clients() {
   return (
-    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 bg-cover bg-center bg-no-repeat">
+    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 bg-cover bg-center bg-no-repeat">
       {/* Логотипы */}
       <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-5 mt-5 overflow-hidden">
         <div className="animate-marquee flex items-center gap-12 sm:gap-16 md:gap-20 whitespace-nowrap">

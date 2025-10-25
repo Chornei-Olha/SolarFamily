@@ -65,10 +65,10 @@ export default function HeroBusiness() {
         {/* Центр: текст */}
         <div className="flex-1 flex items-end">
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-10 w-[90vw] text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 w-[90vw] text-center font-actor font-normal">
               Сонячна електростанція для Вашого бізнесу{' '}
             </h2>{' '}
-            <p className="text-sm md:text-xl tracking-widest w-[90vw] text-center">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[90vw] text-center font-actor font-normal">
               Зниження залежності від комунальних енергопостачальних компаній, економія на рахунках
               за електроенергію та зменшення впливу на довкілля шляхом використання відновлювального
               джерела енергії.

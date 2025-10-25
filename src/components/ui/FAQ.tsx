@@ -41,7 +41,7 @@ export default function FAQ() {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <section className="container mx-auto py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10">
+    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10">
       <h2 className="text-center text-3xl sm:text-5xl font-normal  text-white mb-10">
         Популярні запитання
       </h2>

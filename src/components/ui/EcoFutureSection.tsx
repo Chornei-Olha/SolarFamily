@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 const EcoFutureSection = () => {
   return (
-    <section className="container mx-auto mt-[100px] sm:mt-[100px] py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10 text-white">
+    <section className="container mx-auto mt-[100px] sm:mt-[100px] py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-stretch gap-10">
         {/* Ліва частина (текст) */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-between sm:pr-[100px] gap-8">
-          <h2 className="text-xl lg:text-3xl font-normal">
+        <div className="w-full lg:w-1/2 flex flex-col justify-between sm:pr-[100px] gap-8 text-sm sm:text-base md:text-lg lg:text-xl font-actor font-normal">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-actor font-normal">
             Створюємо екологічне майбутнє вже сьогодні!
           </h2>
           <p className="text-base lg:text-xl font-normal">
@@ -40,9 +40,9 @@ const EcoFutureSection = () => {
               priority
             />
           </div>
-          <div className="text-white text-sm sm:text-lg mt-4 py-2 w-full text-left">
+          <div className="text-white text-sm sm:text-lg mt-4 py-2 w-full text-left font-montserrat font-light">
             <p>
-              <span className="font-semibold">CEO | Олександр Касторнов</span>
+              <span>CEO | Олександр Касторнов</span>
             </p>
             <p>Співзасновник | Яна Касторнова</p>
           </div>
