@@ -63,7 +63,7 @@ export default function HeroSection() {
         </div>
 
         {/* Низ: соцсети */}
-        <div className="flex flex-col gap-2 pb-10 text-white/60 font-poppins font-normal">
+        {/* <div className="flex flex-col gap-2 pb-10 text-white/60 font-poppins font-normal">
           <a href="#" className="hover:text-white">
             Fb.
           </a>
@@ -76,7 +76,7 @@ export default function HeroSection() {
           <a href="#" className="hover:text-white">
             Pl.
           </a>
-        </div>
+        </div> */}
       </div>
       {/* Низ: текст */}
       <div className="absolute bottom-0 right-0 w-1/2 flex flex-col sm:flex-row gap-5 bg-[#D2D6D5] p-3 sm:p-10 font-poppins font-normal justify-between">

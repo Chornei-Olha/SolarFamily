@@ -60,7 +60,7 @@ export default function HeroAboutProduct() {
         </div>
 
         {/* Низ: соцсети */}
-        <div className="flex flex-col gap-2 pb-10 text-white/60">
+        {/* <div className="flex flex-col gap-2 pb-10 text-white/60">
           <a href="#" className="hover:text-white">
             Fb.
           </a>
@@ -73,7 +73,7 @@ export default function HeroAboutProduct() {
           <a href="#" className="hover:text-white">
             Pl.
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

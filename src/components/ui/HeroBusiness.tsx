@@ -48,7 +48,7 @@ export default function HeroBusiness() {
       {/* Контент */}
       <div className="container mx-auto relative z-10 flex flex-col h-full text-white py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10">
         {/* Низ: соцсети */}
-        <div className="absolute top-2/3 left-6 -translate-y-1/2 flex flex-col gap-4 text-white/60 z-20">
+        {/* <div className="absolute top-2/3 left-6 -translate-y-1/2 flex flex-col gap-4 text-white/60 z-20">
           <a href="#" className="hover:text-white">
             Fb.
           </a>
@@ -61,7 +61,7 @@ export default function HeroBusiness() {
           <a href="#" className="hover:text-white">
             Pl.
           </a>
-        </div>
+        </div> */}
         {/* Центр: текст */}
         <div className="flex-1 flex items-center sm:items-end">
           <div>

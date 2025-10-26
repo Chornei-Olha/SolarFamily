@@ -63,7 +63,7 @@ export default function HeroCase() {
         </div>
 
         {/* Низ: соцсети */}
-        <div className="flex flex-col gap-2 pb-10 text-white/60">
+        {/* <div className="flex flex-col gap-2 pb-10 text-white/60">
           <a href="#" className="hover:text-white">
             Fb.
           </a>
@@ -76,7 +76,7 @@ export default function HeroCase() {
           <a href="#" className="hover:text-white">
             Pl.
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

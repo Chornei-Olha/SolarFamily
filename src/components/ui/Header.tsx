@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header className="absolute top-0 left-0 w-full z-30">
       <div className="container mx-auto flex justify-between items-center px-6 sm:px-8 lg:px-10 py-6">
-        {/* Логотип */}
+        {/* ЛОГОТИП */}
         <Link href="/" aria-label="На головну">
           <Image
             src="/images/logo.svg"
@@ -26,12 +26,33 @@ export default function Header() {
           />
         </Link>
 
-        {/* Кнопка бургер + Меню */}
+        {/* СОЦСЕТИ (только на десктопе, вертикально слева) */}
+        <div className="hidden md:flex flex-col items-center gap-[46px] fixed left-[25px] top-1/2 transform -translate-y-1/2 bg-black/10 rounded-[36px] px-[15px] py-[25px] z-20">
+          {[
+            { text: 'YOUTUBE', href: 'https://www.youtube.com/channel/UC2yBgVzZSby7Wt0J4myxI5A' },
+            { text: 'INSTAGRAM', href: 'https://www.instagram.com/solarfamily/' },
+            { text: 'FACEBOOK', href: 'https://www.facebook.com/solarfamily.ukraine' },
+            { text: 'TIKTOK', href: 'https://www.tiktok.com/@solar_family' },
+          ].map(({ text, href }, idx) => (
+            <a
+              key={idx}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] font-montserrat leading-[15px] text-center text-white hover:text-yellow-400 transition-colors"
+              style={{ writingMode: 'vertical-rl' }}
+            >
+              {text}
+            </a>
+          ))}
+        </div>
+
+        {/* КНОПКА МЕНЮ */}
         <button
           className="flex items-center gap-2 text-white z-40 relative group"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
-          {/* Кастомный бургер */}
+          {/* кастомный бургер */}
           <div className="relative w-8 h-6 flex flex-col justify-between items-end transition-transform duration-300 group-hover:scale-110">
             <span
               className={clsx(
@@ -55,15 +76,13 @@ export default function Header() {
               )}
             />
           </div>
-
-          {/* Текст справа */}
           <span className="text-sm tracking-wide select-none group-hover:text-yellow-400 transition-colors duration-300">
             Меню
           </span>
         </button>
       </div>
 
-      {/* Меню */}
+      {/* МЕНЮ */}
       <div
         className={clsx(
           'fixed inset-y-0 right-0 w-3/4 sm:w-1/2 bg-black/90 text-white transform transition-transform duration-500 ease-in-out z-30 flex flex-col',
@@ -78,7 +97,7 @@ export default function Header() {
             Мережева сонячна електростанція
           </Link>
           <Link href="/business" onClick={() => setMenuOpen(false)}>
-            Сонячна електростанція для Вашого бізнесу
+            Сонячна електростанція для бізнесу
           </Link>
           <Link href="/about" onClick={() => setMenuOpen(false)}>
             Про компанію
@@ -90,9 +109,37 @@ export default function Header() {
             Про сонячні електростанції
           </Link>
         </nav>
+
+        {/* СОЦСЕТИ в мобильном меню */}
+        <div className="mt-auto border-t border-white/20 py-6 flex justify-center gap-6">
+          <a
+            href="https://www.youtube.com/channel/UC2yBgVzZSby7Wt0J4myxI5A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/logo-youtube.png" alt="YouTube" width={24} height={24} />
+          </a>
+          <a
+            href="https://www.instagram.com/solarfamily/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/logo-instagram.png" alt="Instagram" width={24} height={24} />
+          </a>
+          <a
+            href="https://www.facebook.com/solarfamily.ukraine"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/logo-youtube.png" alt="Facebook" width={24} height={24} />
+          </a>
+          <a href="https://www.tiktok.com/@solar_family" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/logo-instagram.png" alt="TikTok" width={24} height={24} />
+          </a>
+        </div>
       </div>
 
-      {/* Затемнение позади меню */}
+      {/* затемнение */}
       {menuOpen && (
         <div className="fixed inset-0 bg-black/50 z-20" onClick={() => setMenuOpen(false)} />
       )}

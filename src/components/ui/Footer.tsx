@@ -40,22 +40,28 @@ export default function Footer() {
             {/* Соцсети */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/solarfamily/"
                 className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
               >
                 Instagram
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/channel/UC2yBgVzZSby7Wt0J4myxI5A"
+                className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+              >
+                YouTube
+              </a>
+              <a
+                href="https://www.facebook.com/solarfamily.ukraine"
                 className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
               >
                 Facebook
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@solar_family"
                 className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
               >
-                LinkedIn
+                TikTok
               </a>
             </div>
           </div>
