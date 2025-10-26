@@ -48,18 +48,15 @@ export default function HeroCase() {
       {/* Контент */}
       <div className="container mx-auto relative z-10 flex flex-col h-full text-white py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10">
         {/* Центр: текст */}
-        <div className="flex-1 flex items-center">
-          <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 w-[90vw] font-actor font-normal sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw]">
-              Реалізовані проекти{' '}
-            </h2>{' '}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[90vw] text-left font-actor font-normal">
-              У кожному проєкті ми підбираємо оптимальне рішення відповідно до потреб замовника,
-              забезпечуємо якісний монтаж та гарантійну підтримку. Дивіться наші кейси та
-              переконайтеся, що «Solar Family» — це надійний партнер у сфері відновлюваної
-              енергетики!
-            </p>
-          </div>
+        <div className="flex flex-col h-full justify-center ">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 text-left font-actor font-normal">
+            Реалізовані проекти{' '}
+          </h2>{' '}
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest text-left font-actor font-normal max-w-3xl">
+            У кожному проєкті ми підбираємо оптимальне рішення відповідно до потреб замовника,
+            забезпечуємо якісний монтаж та гарантійну підтримку. Дивіться наші кейси та
+            переконайтеся, що «Solar Family» — це надійний партнер у сфері відновлюваної енергетики!
+          </p>
         </div>
 
         {/* Низ: соцсети */}
