@@ -134,7 +134,7 @@ export default function Retail() {
         {projects.map((project) => (
           <Link
             key={project.id}
-            href={project.href}
+            href={`${project.href}#second-section`}
             className="relative overflow-hidden shadow group"
           >
             <Image

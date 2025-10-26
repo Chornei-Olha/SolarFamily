@@ -34,7 +34,10 @@ export default function AgrovetAtlanticSection() {
   const [selectedMember, setSelectedMember] = useState<null | (typeof boardMembers)[0]>(null);
 
   return (
-    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10">
+    <section
+      id="second-section"
+      className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
+    >
       <div className="flex flex-col gap-12 items-center text-white">
         {/* Текстовая часть */}
         <motion.div
