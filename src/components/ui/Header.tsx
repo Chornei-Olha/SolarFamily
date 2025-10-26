@@ -27,7 +27,7 @@ export default function Header() {
         </Link>
 
         {/* СОЦСЕТИ (только на десктопе, вертикально слева) */}
-        <div className="hidden md:flex flex-col items-center gap-[46px] fixed left-[25px] top-1/2 transform -translate-y-1/2 bg-black/10 rounded-[36px] px-[15px] py-[25px] z-20">
+        <div className="hidden md:flex flex-col items-center gap-[46px] fixed left-[15px] top-1/2 transform -translate-y-1/2 bg-black/10 rounded-[36px] px-[15px] py-[25px] z-20">
           {[
             { text: 'YOUTUBE', href: 'https://www.youtube.com/channel/UC2yBgVzZSby7Wt0J4myxI5A' },
             { text: 'INSTAGRAM', href: 'https://www.instagram.com/solarfamily/' },
