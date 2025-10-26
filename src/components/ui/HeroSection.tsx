@@ -1,6 +1,8 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
+
 import Header from './Header';
 
 const slides = ['/images/slide1.png', '/images/slide2.jpg', '/images/slide3.jpg'];
@@ -53,12 +55,15 @@ export default function HeroSection() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-12 sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[50vw] font-poppins font-normal">
               Створюємо екологічне майбутнє вже сьогодні
             </h2>
-            <button className="flex gap-4 items-center bg-[#A4AA9C] text-black px-5 py-3 rounded-[50px] font-poppins font-normal shadow-lg hover:bg-gray-200 transition">
+            <Link
+              href="/about"
+              className="inline-flex gap-4 items-center bg-[#A4AA9C] text-black px-5 py-3 rounded-[50px] font-poppins font-normal shadow-lg hover:bg-gray-200 transition"
+            >
               <span className="w-8 h-8 flex items-center justify-center bg-white rounded-full">
                 <ArrowRight size={18} className="text-black" />
               </span>
               <span className="font-poppins font-normal">Детальніше</span>
-            </button>
+            </Link>
           </div>
         </div>
 
