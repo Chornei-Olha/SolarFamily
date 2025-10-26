@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
 import { Autoplay } from 'swiper/modules';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import 'swiper/css';
 
@@ -220,6 +221,103 @@ export default function AgrovetAtlanticSection() {
           )}
         </div>
       </div>
+      {/* --- Навигация между проектами --- */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        viewport={{ once: true }}
+        className="relative mt-16 flex flex-col items-center justify-center"
+      >
+        {/* Линия соединяющая стрелки */}
+        <div className="absolute top-1/2 left-1/2 w-[280px] sm:w-[420px] h-[2px] bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-1/2" />
+
+        <div className="flex items-center justify-center gap-8 sm:gap-14 relative z-10">
+          {/* Предыдущий проект */}
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex flex-col items-center"
+          >
+            <Link
+              href="/case/previous-project" // ⚙️ поменяй на нужный путь
+              className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-white text-black shadow-xl hover:bg-yellow-400 hover:text-white transition-all duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </Link>
+            <span className="text-sm mt-2 text-white/80 tracking-wide">Попередній</span>
+          </motion.div>
+
+          {/* Все проекты */}
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex flex-col items-center"
+          >
+            <Link
+              href="/case" // ⚙️ ссылка на страницу всех проектов
+              className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-yellow-400 text-black shadow-xl hover:bg-white hover:text-yellow-500 transition-all duration-300 ring-4 ring-white/20"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 12h18M3 6h18M3 18h18"
+                />
+              </svg>
+            </Link>
+            <span className="text-sm mt-2 text-white/80 tracking-wide">Усі проєкти</span>
+          </motion.div>
+
+          {/* Следующий проект */}
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex flex-col items-center"
+          >
+            <Link
+              href="/case/next-project" // ⚙️ поменяй на нужный путь
+              className="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-white text-black shadow-xl hover:bg-yellow-400 hover:text-white transition-all duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+            <span className="text-sm mt-2 text-white/80 tracking-wide">Наступний</span>
+          </motion.div>
+        </div>
+      </motion.div>
     </section>
   );
 }
