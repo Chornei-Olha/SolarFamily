@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 import HeroCase from '../../components/ui/HeroCase';
 import Footer from '../../components/ui/Footer';
-import AgrovetAtlanticSection from '../../components/ui/AgrovetAtlanticSection';
+import AgrovetAtlanticSection from '../../components/ui/projects/AgrovetAtlanticSection';
 
 const AgrovetAtlanticPage: React.FC = () => {
   return (

@@ -224,6 +224,30 @@ export default function AgrovetAtlanticSection() {
           )}
         </div>
       </div>
+
+      {/* --- Кнопка "Назад" --- */}
+      <div className="mt-10">
+        <Link
+          href="/case"
+          className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          <span>Назад до проєктів</span>
+        </Link>
+      </div>
       {/* --- Навигация между проектами --- */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -237,7 +261,7 @@ export default function AgrovetAtlanticSection() {
 
         <div className="flex items-center justify-center gap-8 sm:gap-14 relative z-10">
           {/* Предыдущий проект */}
-          <motion.div
+          {/* <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="flex flex-col items-center"
@@ -262,10 +286,10 @@ export default function AgrovetAtlanticSection() {
               </svg>
             </Link>
             <span className="text-sm mt-2 text-white/80 tracking-wide">Попередній</span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Все проекты */}
-          <motion.div
+          {/* <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="flex flex-col items-center"
@@ -290,10 +314,10 @@ export default function AgrovetAtlanticSection() {
               </svg>
             </Link>
             <span className="text-sm mt-2 text-white/80 tracking-wide">Усі проєкти</span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Следующий проект */}
-          <motion.div
+          {/* <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="flex flex-col items-center"
@@ -318,7 +342,7 @@ export default function AgrovetAtlanticSection() {
               </svg>
             </Link>
             <span className="text-sm mt-2 text-white/80 tracking-wide">Наступний</span>
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.div>
     </section>
