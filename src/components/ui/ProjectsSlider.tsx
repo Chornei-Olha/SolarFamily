@@ -5,6 +5,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 const projects = [
   {
@@ -13,24 +14,14 @@ const projects = [
     image: '/images/projects/agrovetAtlantic-1.webp',
     href: '/agrovetAtlantic',
   },
-  {
-    id: 2,
-    title: 'Дінбо',
-    image: '/images/projects/dinbo-1.webp',
-    href: '/dinbo',
-  },
+  { id: 2, title: 'Дінбо', image: '/images/projects/dinbo-1.webp', href: '/dinbo' },
   {
     id: 3,
     title: '«Модус Форвард»',
     image: '/images/projects/modusForward-1.webp',
     href: '/modusForward',
   },
-  {
-    id: 4,
-    title: '«Політара»',
-    image: '/images/projects/politara-1.webp',
-    href: '/politara',
-  },
+  { id: 4, title: '«Політара»', image: '/images/projects/politara-1.webp', href: '/politara' },
   {
     id: 5,
     title: '«Родинна м’ястерня»',
@@ -43,12 +34,7 @@ const projects = [
     image: '/images/projects/signetMilk-1.webp',
     href: '/signetMilk',
   },
-  {
-    id: 7,
-    title: '«Elopak»',
-    image: '/images/projects/elopak-1.webp',
-    href: '/elopak',
-  },
+  { id: 7, title: '«Elopak»', image: '/images/projects/elopak-1.webp', href: '/elopak' },
   {
     id: 8,
     title: '«АТБ Логістик-Юніон»',
@@ -61,12 +47,7 @@ const projects = [
     image: '/images/projects/ATBSupermarkets-1.webp',
     href: '/ATBSupermarkets',
   },
-  {
-    id: 10,
-    title: '«Кліксар»',
-    image: '/images/projects/clicksar-1.webp',
-    href: '/clicksar',
-  },
+  { id: 10, title: '«Кліксар»', image: '/images/projects/clicksar-1.webp', href: '/clicksar' },
   {
     id: 11,
     title: '«Кронос Агро»',
@@ -103,37 +84,24 @@ const projects = [
     image: '/images/projects/PUMB-1.webp',
     href: '/PUMB',
   },
-  {
-    id: 17,
-    title: 'СПГ «Нива»',
-    image: '/images/projects/SPGNiwa-1.webp',
-    href: '/SPGNiwa',
-  },
-  {
-    id: 18,
-    title: '«Укравіт»',
-    image: '/images/projects/ukravit-1.webp',
-    href: '/ukravit',
-  },
-  {
-    id: 19,
-    title: '«Фора»',
-    image: '/images/projects/fora-1.webp',
-    href: '/fora',
-  },
+  { id: 17, title: 'СПГ «Нива»', image: '/images/projects/SPGNiwa-1.webp', href: '/SPGNiwa' },
+  { id: 18, title: '«Укравіт»', image: '/images/projects/ukravit-1.webp', href: '/ukravit' },
+  { id: 19, title: '«Фора»', image: '/images/projects/fora-1.webp', href: '/fora' },
 ];
 
 export default function ProjectsSlider() {
   return (
-    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
+    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white relative">
       <div>
-        {/* Текст */}
+        {/* Верхний текст */}
         <div className="flex items-center justify-end">
-          <p className="text-right text-white text-xl sm:tex-xl md:text-3xl lg:text-4xl max-w-6xl pb-12 sm:pb-16 md:pb-28 lg:pb-32 font-actor font-normal">
+          <p className="text-right text-white text-xl sm:text-xl md:text-3xl lg:text-4xl max-w-6xl pb-12 sm:pb-16 md:pb-28 lg:pb-32 font-actor font-normal">
             SOLAR FAMILY – компанія, яка генерує екологічне сонячне майбутнє для українських сімей
             та бізнесів.
           </p>
         </div>
+
+        {/* Заголовок и ссылка */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl sm:text-3xl font-semibold">Проєкти</h2>
           <Link
@@ -144,55 +112,83 @@ export default function ProjectsSlider() {
           </Link>
         </div>
 
+        {/* Слайдер */}
         <div className="relative">
           <Swiper
             modules={[Navigation]}
             spaceBetween={20}
             slidesPerView={1.2}
             breakpoints={{
-              640: {
-                slidesPerView: 1.5,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 2.5,
-              },
+              640: { slidesPerView: 1.5 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 2.5 },
             }}
             navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: '.swiper-next',
+              prevEl: '.swiper-prev',
             }}
             className="group"
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
-                <div className="relative rounded overflow-hidden h-72 md:h-[400px]">
+                <div className="relative rounded-lg overflow-hidden h-72 md:h-[400px]">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
+                  <div className="absolute inset-0 bg-black/50 flex flex-col justify-between p-5">
                     <h3 className="text-xl sm:text-2xl font-semibold">{project.title}</h3>
-                    {/* <div className="text-sm sm:text-base">
-                      <p className="opacity-70">Відділ продажу</p>
-                      <p>{project.contact}</p>
-                    </div> */}
+
+                    {/* Кнопка перехода со стрелкой */}
+                    <Link
+                      href={project.href}
+                      className="self-end inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 transition group"
+                    >
+                      <ArrowRight className="w-6 h-6 text-white transition-transform duration-300 group-hover:translate-x-1" />
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
-
-            {/* Навигация для десктопа */}
-            <div className="hidden lg:flex absolute top-1/2 left-0 z-10 -translate-y-1/2  text-white text-3xl cursor-pointer px-4">
-              ‹
-            </div>
-            <div className="hidden lg:flex absolute top-1/2 right-0 z-10 -translate-y-1/2  text-white text-3xl cursor-pointer px-4">
-              ›
-            </div>
           </Swiper>
+
+          {/* Кастомные стрелки навигации — как в CategorySlider */}
+          <button
+            className="swiper-prev hidden md:flex items-center justify-center absolute left-[35vw] -bottom-10 z-20 w-8 h-8 bg-black rounded-full shadow-sm hover:scale-105 transition"
+            aria-label="Попередній слайд"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+
+          <button
+            className="swiper-next hidden md:flex items-center justify-center absolute right-[35vw] -bottom-10 z-20 w-8 h-8 bg-black rounded-full shadow-sm hover:scale-105 transition"
+            aria-label="Наступний слайд"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>

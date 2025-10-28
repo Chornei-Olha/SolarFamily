@@ -27,11 +27,11 @@ export default function Footer() {
           <div className="flex flex-col gap-8">
             {/* Меню */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              <a href="#">Головна</a>
-              <a href="#">Проєкти</a>
-              <a href="#">Новини</a>
-              <a href="#">Для партнерів</a>
-              <a href="#">Про компанію</a>
+              <a href="/">Головна</a>
+              <a href="/case">Проєкти</a>
+              <a href="/aboutProduct">Новини</a>
+              <a href="/business">Для партнерів</a>
+              <a href="/about">Про компанію</a>
               <a href="#">Послуги</a>
               <a href="#">Контакти</a>
               <a href="#">Вакансії</a>
