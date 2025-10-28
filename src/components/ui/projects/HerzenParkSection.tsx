@@ -11,9 +11,12 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const images = [
-  { id: 1, photo: '/images/herzenpark1.jpg' },
-  { id: 2, photo: '/images/herzenpark2.jpg' },
-  { id: 3, photo: '/images/herzenpark3.jpg' },
+  { id: 1, photo: '/images/projects/herzenPark-1.webp' },
+  { id: 3, photo: '/images/projects/herzenPark-3.webp' },
+  { id: 2, photo: '/images/projects/herzenPark-2.webp' },
+  { id: 4, photo: '/images/projects/herzenPark-4.webp' },
+  // { id: 5, photo: '/images/projects/herzenPark-5.webp' },
+  { id: 6, photo: '/images/projects/herzenPark-6.webp' },
 ];
 
 export default function HerzenParkSection() {
@@ -21,7 +24,7 @@ export default function HerzenParkSection() {
 
   return (
     <section
-      id="herzen-park"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -150,7 +153,7 @@ export default function HerzenParkSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -207,7 +210,7 @@ export default function HerzenParkSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

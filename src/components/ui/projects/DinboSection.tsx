@@ -11,21 +11,45 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const boardMembers = [
-  {
-    id: 1,
-    photo: '/images/dinbo01.jpg',
-  },
-  {
-    id: 2,
-    photo: '/images/dinbo02.jpg',
-  },
+  // {
+  //   id: 1,
+  //   photo: '/images/projects/dinbo-1.webp',
+  // },
+  // {
+  //   id: 2,
+  //   photo: '/images/projects/dinbo-2.webp',
+  // },
   {
     id: 3,
-    photo: '/images/dinbo03.jpg',
+    photo: '/images/projects/dinbo-3.webp',
   },
   {
     id: 4,
-    photo: '/images/dinbo04.jpg',
+    photo: '/images/projects/dinbo-4.webp',
+  },
+  {
+    id: 5,
+    photo: '/images/projects/dinbo-5.webp',
+  },
+  {
+    id: 6,
+    photo: '/images/projects/dinbo-6.webp',
+  },
+  {
+    id: 7,
+    photo: '/images/projects/dinbo-7.webp',
+  },
+  {
+    id: 8,
+    photo: '/images/projects/dinbo-8.webp',
+  },
+  {
+    id: 9,
+    photo: '/images/projects/dinbo-9.webp',
+  },
+  {
+    id: 10,
+    photo: '/images/projects/dinbo-10.webp',
   },
 ];
 
@@ -162,7 +186,7 @@ export default function DinboSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -233,7 +257,7 @@ export default function DinboSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

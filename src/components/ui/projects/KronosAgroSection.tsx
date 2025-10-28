@@ -11,10 +11,8 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const boardMembers = [
-  { id: 1, photo: '/images/kronos1.jpg' },
-  { id: 2, photo: '/images/kronos2.jpg' },
-  { id: 3, photo: '/images/kronos3.jpg' },
-  { id: 4, photo: '/images/kronos4.jpg' },
+  { id: 1, photo: '/images/projects/kronosAgro-1.webp' },
+  { id: 2, photo: '/images/projects/kronosAgro-2.webp' },
 ];
 
 export default function KronosAgroSection() {
@@ -23,7 +21,7 @@ export default function KronosAgroSection() {
 
   return (
     <section
-      id="kronos-agro-section"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -153,7 +151,7 @@ export default function KronosAgroSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -210,7 +208,7 @@ export default function KronosAgroSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

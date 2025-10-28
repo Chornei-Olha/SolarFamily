@@ -11,21 +11,13 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const boardMembers = [
-  {
-    id: 1,
-    photo: '/images/rodynna01.jpg',
-  },
+  // {
+  //   id: 1,
+  //   photo: '/images/projects/rodynnaMyasternya-1.webp',
+  // },
   {
     id: 2,
-    photo: '/images/rodynna02.jpg',
-  },
-  {
-    id: 3,
-    photo: '/images/rodynna03.jpg',
-  },
-  {
-    id: 4,
-    photo: '/images/rodynna04.jpg',
+    photo: '/images/projects/rodynnaMyasternya-2.webp',
   },
 ];
 
@@ -164,7 +156,7 @@ export default function RodynnaMyasternyaSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -235,7 +227,7 @@ export default function RodynnaMyasternyaSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

@@ -98,7 +98,7 @@ const projects: Project[] = [
   {
     id: 13,
     title: '«Натурпродукт-Вега»',
-    description: 'Потужність системи зберігання енергії (акумулятори): 35 кВт/год',
+    description: 'Потужність: 35 кВт',
     image: '/images/projects/naturproductVega-1.webp',
     href: '/naturproductVega',
   },
@@ -112,7 +112,7 @@ const projects: Project[] = [
   {
     id: 15,
     title: 'ОСББ «Герцен Парк»',
-    description: 'Потужність системи зберігання енергії (акумулятори): 24 кВ',
+    description: 'Потужність: 24 кВт',
     image: '/images/projects/herzenPark-1.webp',
     href: '/herzenPark',
   },
@@ -148,7 +148,10 @@ const projects: Project[] = [
 
 export default function Retail() {
   return (
-    <section className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10">
+    <section
+      id="second-section"
+      className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
+    >
       <h2 className="text-center text-2xl font-semibold mb-6">ПРОЄКТИ</h2>
 
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
@@ -165,7 +168,7 @@ export default function Retail() {
               height={400}
               className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="flex flex-col text-black text-sm bg-white p-5 text-center">
+            <div className="flex flex-col text-black text-sm bg-white px-2 py-5 text-center">
               <span className="uppercase font-semibold text-sm">{project.title}</span>
               <span className="uppercase font-light text-xs">{project.description}</span>
             </div>

@@ -11,9 +11,8 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const images = [
-  { id: 1, photo: '/images/ukravit1.jpg' },
-  { id: 2, photo: '/images/ukravit2.jpg' },
-  { id: 3, photo: '/images/ukravit3.jpg' },
+  { id: 1, photo: '/images/projects/ukravit-1.webp' },
+  { id: 2, photo: '/images/projects/ukravit-2.webp' },
 ];
 
 export default function UkravitSection() {
@@ -21,7 +20,7 @@ export default function UkravitSection() {
 
   return (
     <section
-      id="ukravit"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -146,7 +145,7 @@ export default function UkravitSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -203,7 +202,7 @@ export default function UkravitSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

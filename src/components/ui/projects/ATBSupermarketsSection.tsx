@@ -11,10 +11,16 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const boardMembers = [
-  { id: 1, photo: '/images/atb-supermarket1.jpg' },
-  { id: 2, photo: '/images/atb-supermarket2.jpg' },
-  { id: 3, photo: '/images/atb-supermarket3.jpg' },
-  { id: 4, photo: '/images/atb-supermarket4.jpg' },
+  { id: 1, photo: '/images/projects/ATBSupermarkets-1.webp' },
+  { id: 2, photo: '/images/projects/ATBSupermarkets-2.webp' },
+  // { id: 3, photo: '/images/projects/ATBSupermarkets-3.webp' },
+  { id: 4, photo: '/images/projects/ATBSupermarkets-4.webp' },
+  { id: 5, photo: '/images/projects/ATBSupermarkets-5.webp' },
+  // { id: 6, photo: '/images/projects/ATBSupermarkets-6.webp' },
+  { id: 7, photo: '/images/projects/ATBSupermarkets-7.webp' },
+  { id: 8, photo: '/images/projects/ATBSupermarkets-8.webp' },
+  { id: 9, photo: '/images/projects/ATBSupermarkets-9.webp' },
+  { id: 10, photo: '/images/projects/ATBSupermarkets-10.webp' },
 ];
 
 export default function ATBSupermarketsSection() {
@@ -23,7 +29,7 @@ export default function ATBSupermarketsSection() {
 
   return (
     <section
-      id="atb-supermarkets-section"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -151,7 +157,7 @@ export default function ATBSupermarketsSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -208,7 +214,7 @@ export default function ATBSupermarketsSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

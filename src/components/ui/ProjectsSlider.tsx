@@ -9,39 +9,117 @@ import Link from 'next/link';
 const projects = [
   {
     id: 1,
-    title: 'Нова Пошта',
-    image: '/images/nova-poshta.jpg',
-    contact: '+38 (044) 344 44 44',
+    title: 'Агровет Атлантік Груп',
+    image: '/images/projects/agrovetAtlantic-1.webp',
+    href: '/agrovetAtlantic',
   },
   {
     id: 2,
-    title: 'Фора',
-    image: '/images/fora.jpg',
-    contact: '(044) 939-99-99, 044 344',
+    title: 'Дінбо',
+    image: '/images/projects/dinbo-1.webp',
+    href: '/dinbo',
   },
   {
     id: 3,
-    title: 'Нова Пошта',
-    image: '/images/nova-poshta.jpg',
-    contact: '+38 (044) 344 44 44',
+    title: '«Модус Форвард»',
+    image: '/images/projects/modusForward-1.webp',
+    href: '/modusForward',
   },
   {
     id: 4,
-    title: 'Фора',
-    image: '/images/fora.jpg',
-    contact: '(044) 939-99-99, 044 344',
+    title: '«Політара»',
+    image: '/images/projects/politara-1.webp',
+    href: '/politara',
   },
   {
     id: 5,
-    title: 'Нова Пошта',
-    image: '/images/nova-poshta.jpg',
-    contact: '+38 (044) 344 44 44',
+    title: '«Родинна м’ястерня»',
+    image: '/images/projects/rodynnaMyasternya-1.webp',
+    href: '/rodynnaMyasternya',
   },
   {
     id: 6,
-    title: 'Фора',
-    image: '/images/fora.jpg',
-    contact: '(044) 939-99-99, 044 344',
+    title: '«Сігнет-Мілк»',
+    image: '/images/projects/signetMilk-1.webp',
+    href: '/signetMilk',
+  },
+  {
+    id: 7,
+    title: '«Elopak»',
+    image: '/images/projects/elopak-1.webp',
+    href: '/elopak',
+  },
+  {
+    id: 8,
+    title: '«АТБ Логістик-Юніон»',
+    image: '/images/projects/ATBLogisticUnion-1.webp',
+    href: '/ATBLogisticUnion',
+  },
+  {
+    id: 9,
+    title: 'Супермаркети «АТБ»',
+    image: '/images/projects/ATBSupermarkets-1.webp',
+    href: '/ATBSupermarkets',
+  },
+  {
+    id: 10,
+    title: '«Кліксар»',
+    image: '/images/projects/clicksar-1.webp',
+    href: '/clicksar',
+  },
+  {
+    id: 11,
+    title: '«Кронос Агро»',
+    image: '/images/projects/kronosAgro-1.webp',
+    href: '/kronosAgro',
+  },
+  {
+    id: 12,
+    title: 'Інкубатор на Морозівській птахофабриці',
+    image: '/images/projects/morozivIncubator.webp',
+    href: '/morozivIncubator',
+  },
+  {
+    id: 13,
+    title: '«Натурпродукт-Вега»',
+    image: '/images/projects/naturproductVega-1.webp',
+    href: '/naturproductVega',
+  },
+  {
+    id: 14,
+    title: '«Нова пошта». Логістичний термінал',
+    image: '/images/projects/novaPoshtaTerminal-1.webp',
+    href: '/novaPoshtaTerminal',
+  },
+  {
+    id: 15,
+    title: 'ОСББ «Герцен Парк»',
+    image: '/images/projects/herzenPark-1.webp',
+    href: '/herzenPark',
+  },
+  {
+    id: 16,
+    title: 'ПУМБ — головне відділення у Києві',
+    image: '/images/projects/PUMB-1.webp',
+    href: '/PUMB',
+  },
+  {
+    id: 17,
+    title: 'СПГ «Нива»',
+    image: '/images/projects/SPGNiwa-1.webp',
+    href: '/SPGNiwa',
+  },
+  {
+    id: 18,
+    title: '«Укравіт»',
+    image: '/images/projects/ukravit-1.webp',
+    href: '/ukravit',
+  },
+  {
+    id: 19,
+    title: '«Фора»',
+    image: '/images/projects/fora-1.webp',
+    href: '/fora',
   },
 ];
 
@@ -59,7 +137,7 @@ export default function ProjectsSlider() {
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl sm:text-3xl font-semibold">Проєкти</h2>
           <Link
-            href="/projects"
+            href="/case"
             className="text-sm bg-white text-black rounded-full px-4 py-1 hover:bg-gray-200 transition"
           >
             Дивитись усі
@@ -98,10 +176,10 @@ export default function ProjectsSlider() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
                     <h3 className="text-xl sm:text-2xl font-semibold">{project.title}</h3>
-                    <div className="text-sm sm:text-base">
+                    {/* <div className="text-sm sm:text-base">
                       <p className="opacity-70">Відділ продажу</p>
                       <p>{project.contact}</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </SwiperSlide>

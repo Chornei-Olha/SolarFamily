@@ -10,12 +10,7 @@ import Link from 'next/link';
 
 import 'swiper/css';
 
-const boardMembers = [
-  { id: 1, photo: '/images/moroziv1.jpg' },
-  { id: 2, photo: '/images/moroziv2.jpg' },
-  { id: 3, photo: '/images/moroziv3.jpg' },
-  { id: 4, photo: '/images/moroziv4.jpg' },
-];
+const boardMembers = [{ id: 1, photo: '/images/projects/morozivIncubator.webp' }];
 
 export default function MorozivIncubatorSection() {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -23,7 +18,7 @@ export default function MorozivIncubatorSection() {
 
   return (
     <section
-      id="moroziv-incubator-section"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -150,7 +145,7 @@ export default function MorozivIncubatorSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -207,7 +202,7 @@ export default function MorozivIncubatorSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

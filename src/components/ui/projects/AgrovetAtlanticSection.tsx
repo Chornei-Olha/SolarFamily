@@ -13,19 +13,27 @@ import 'swiper/css';
 const boardMembers = [
   {
     id: 1,
-    photo: '/images/agrovet1.jpg',
+    photo: '/images/projects/agrovetAtlantic-1.webp',
   },
   {
     id: 2,
-    photo: '/images/agrovet02.jpg',
+    photo: '/images/projects/agrovetAtlantic-2.webp',
   },
   {
     id: 3,
-    photo: '/images/agrovet1.jpg',
+    photo: '/images/projects/agrovetAtlantic-3.webp',
   },
   {
     id: 4,
-    photo: '/images/agrovet04.jpeg',
+    photo: '/images/projects/agrovetAtlantic-4.webp',
+  },
+  {
+    id: 5,
+    photo: '/images/projects/agrovetAtlantic-5.webp',
+  },
+  {
+    id: 6,
+    photo: '/images/projects/agrovetAtlantic-6.webp',
   },
 ];
 
@@ -158,7 +166,7 @@ export default function AgrovetAtlanticSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -228,7 +236,7 @@ export default function AgrovetAtlanticSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

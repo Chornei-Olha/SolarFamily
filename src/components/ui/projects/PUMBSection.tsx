@@ -11,9 +11,18 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const images = [
-  { id: 1, photo: '/images/pumb1.jpg' },
-  { id: 2, photo: '/images/pumb2.jpg' },
-  { id: 3, photo: '/images/pumb3.jpg' },
+  { id: 1, photo: '/images/projects/PUMB-1.webp' },
+  { id: 2, photo: '/images/projects/PUMB-2.webp' },
+  { id: 3, photo: '/images/projects/PUMB-3.webp' },
+  { id: 4, photo: '/images/projects/PUMB-4.webp' },
+  { id: 5, photo: '/images/projects/PUMB-5.webp' },
+  { id: 6, photo: '/images/projects/PUMB-6.webp' },
+  // { id: 7, photo: '/images/projects/PUMB-7.webp' },
+  { id: 8, photo: '/images/projects/PUMB-8.webp' },
+  { id: 9, photo: '/images/projects/PUMB-9.webp' },
+  { id: 10, photo: '/images/projects/PUMB-10.webp' },
+  { id: 11, photo: '/images/projects/PUMB-11.webp' },
+  { id: 12, photo: '/images/projects/PUMB-12.webp' },
 ];
 
 export default function PUMBSection() {
@@ -21,7 +30,7 @@ export default function PUMBSection() {
 
   return (
     <section
-      id="pumb"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -148,7 +157,7 @@ export default function PUMBSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -205,7 +214,7 @@ export default function PUMBSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

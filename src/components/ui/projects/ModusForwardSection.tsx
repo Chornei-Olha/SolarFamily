@@ -13,19 +13,35 @@ import 'swiper/css';
 const boardMembers = [
   {
     id: 1,
-    photo: '/images/modus01.jpg',
+    photo: '/images/projects/modusForward-1.webp',
   },
   {
     id: 2,
-    photo: '/images/modus02.jpg',
+    photo: '/images/projects/modusForward-2.webp',
   },
   {
     id: 3,
-    photo: '/images/modus03.jpg',
+    photo: '/images/projects/modusForward-3.webp',
   },
   {
     id: 4,
-    photo: '/images/modus04.jpg',
+    photo: '/images/projects/modusForward-4.webp',
+  },
+  {
+    id: 5,
+    photo: '/images/projects/modusForward-5.webp',
+  },
+  {
+    id: 6,
+    photo: '/images/projects/modusForward-6.webp',
+  },
+  {
+    id: 7,
+    photo: '/images/projects/modusForward-7.webp',
+  },
+  {
+    id: 8,
+    photo: '/images/projects/modusForward-8.webp',
   },
 ];
 
@@ -161,7 +177,7 @@ export default function ModusForwardSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -232,7 +248,7 @@ export default function ModusForwardSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

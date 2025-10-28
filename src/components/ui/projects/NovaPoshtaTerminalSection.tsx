@@ -21,7 +21,7 @@ export default function NovaPoshtaTerminalSection() {
 
   return (
     <section
-      id="nova-poshta-terminal"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -210,7 +210,7 @@ export default function NovaPoshtaTerminalSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

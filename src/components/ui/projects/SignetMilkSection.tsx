@@ -13,19 +13,19 @@ import 'swiper/css';
 const boardMembers = [
   {
     id: 1,
-    photo: '/images/signet01.jpg',
+    photo: '/images/projects/signetMilk-1.webp',
   },
   {
     id: 2,
-    photo: '/images/signet02.jpg',
+    photo: '/images/projects/signetMilk-2.webp',
   },
   {
     id: 3,
-    photo: '/images/signet03.jpg',
+    photo: '/images/projects/signetMilk-3.webp',
   },
   {
     id: 4,
-    photo: '/images/signet04.jpg',
+    photo: '/images/projects/signetMilk-4.webp',
   },
 ];
 
@@ -35,7 +35,7 @@ export default function SignetMilkSection() {
 
   return (
     <section
-      id="signet-section"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -165,7 +165,7 @@ export default function SignetMilkSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -236,7 +236,7 @@ export default function SignetMilkSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

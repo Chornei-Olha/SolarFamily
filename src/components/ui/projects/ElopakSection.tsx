@@ -13,19 +13,31 @@ import 'swiper/css';
 const boardMembers = [
   {
     id: 1,
-    photo: '/images/elopak01.jpg',
+    photo: '/images/projects/elopak-1.webp',
   },
   {
     id: 2,
-    photo: '/images/elopak02.jpg',
+    photo: '/images/projects/elopak-2.webp',
   },
   {
     id: 3,
-    photo: '/images/elopak03.jpg',
+    photo: '/images/projects/elopak-3.webp',
   },
   {
     id: 4,
-    photo: '/images/elopak04.jpg',
+    photo: '/images/projects/elopak-4.webp',
+  },
+  {
+    id: 5,
+    photo: '/images/projects/elopak-5.webp',
+  },
+  // {
+  //   id: 6,
+  //   photo: '/images/projects/elopak-6.webp',
+  // },
+  {
+    id: 7,
+    photo: '/images/projects/elopak-7.webp',
   },
 ];
 
@@ -35,7 +47,7 @@ export default function ElopakSection() {
 
   return (
     <section
-      id="elopak-section"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -163,7 +175,7 @@ export default function ElopakSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -234,7 +246,7 @@ export default function ElopakSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

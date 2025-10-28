@@ -13,20 +13,24 @@ import 'swiper/css';
 const boardMembers = [
   {
     id: 1,
-    photo: '/images/politara01.jpg',
+    photo: '/images/projects/politara-1.webp',
   },
   {
     id: 2,
-    photo: '/images/politara02.jpg',
+    photo: '/images/projects/politara-2.webp',
   },
   {
     id: 3,
-    photo: '/images/politara03.jpg',
+    photo: '/images/projects/politara-3.webp',
   },
-  {
-    id: 4,
-    photo: '/images/politara04.jpg',
-  },
+  // {
+  //   id: 4,
+  //   photo: '/images/projects/politara-4.webp',
+  // },
+  // {
+  //   id: 5,
+  //   photo: '/images/projects/politara-5.webp',
+  // },
 ];
 
 export default function PolitaraSection() {
@@ -161,7 +165,7 @@ export default function PolitaraSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -232,7 +236,7 @@ export default function PolitaraSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

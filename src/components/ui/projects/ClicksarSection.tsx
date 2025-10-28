@@ -11,10 +11,8 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const boardMembers = [
-  { id: 1, photo: '/images/clicksar1.jpg' },
-  { id: 2, photo: '/images/clicksar2.jpg' },
-  { id: 3, photo: '/images/clicksar3.jpg' },
-  { id: 4, photo: '/images/clicksar4.jpg' },
+  { id: 1, photo: '/images/projects/clicksar-1.webp' },
+  { id: 2, photo: '/images/projects/clicksar-2.webp' },
 ];
 
 export default function ClicksarSection() {
@@ -23,7 +21,7 @@ export default function ClicksarSection() {
 
   return (
     <section
-      id="clicksar-section"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -149,7 +147,7 @@ export default function ClicksarSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -206,7 +204,7 @@ export default function ClicksarSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg

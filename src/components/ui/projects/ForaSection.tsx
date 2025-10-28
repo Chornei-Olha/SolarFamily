@@ -11,9 +11,25 @@ import Link from 'next/link';
 import 'swiper/css';
 
 const images = [
-  { id: 1, photo: '/images/fora1.jpg' },
-  { id: 2, photo: '/images/fora2.jpg' },
-  { id: 3, photo: '/images/fora3.jpg' },
+  { id: 1, photo: '/images/projects/fora-1.webp' },
+  // { id: 2, photo: '/images/projects/fora-2.webp' },
+  { id: 3, photo: '/images/projects/fora-3.webp' },
+  { id: 4, photo: '/images/projects/fora-4.webp' },
+  { id: 5, photo: '/images/projects/fora-5.webp' },
+  { id: 6, photo: '/images/projects/fora-6.webp' },
+  { id: 7, photo: '/images/projects/fora-7.webp' },
+  { id: 8, photo: '/images/projects/fora-8.webp' },
+  { id: 9, photo: '/images/projects/fora-9.webp' },
+  { id: 10, photo: '/images/projects/fora-10.webp' },
+  { id: 11, photo: '/images/projects/fora-11.webp' },
+  // { id: 12, photo: '/images/projects/fora-12.webp' },
+  { id: 13, photo: '/images/projects/fora-13.webp' },
+  { id: 14, photo: '/images/projects/fora-14.webp' },
+  { id: 15, photo: '/images/projects/fora-15.webp' },
+  // { id: 16, photo: '/images/projects/fora-16.webp' },
+  // { id: 17, photo: '/images/projects/fora-17.webp' },
+  // { id: 18, photo: '/images/projects/fora-18.webp' },
+  { id: 19, photo: '/images/projects/fora-19.webp' },
 ];
 
 export default function ForaSection() {
@@ -21,7 +37,7 @@ export default function ForaSection() {
 
   return (
     <section
-      id="fora"
+      id="second-section"
       className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10"
     >
       <div className="flex flex-col gap-12 items-center text-white">
@@ -147,7 +163,7 @@ export default function ForaSection() {
                         alt="slider"
                         width={900}
                         height={500}
-                        className="w-auto h-[20vh] object-cover"
+                        className="w-[auto] h-[auto] object-cover"
                         priority
                       />
                     </div>
@@ -204,7 +220,7 @@ export default function ForaSection() {
       {/* --- Кнопка "Назад" --- */}
       <div className="mt-10">
         <Link
-          href="/case"
+          href={`/case#second-section`}
           className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-all text-sm"
         >
           <svg
