@@ -44,7 +44,7 @@ export default function BusinessSection() {
         {/* Правый блок с фото */}
         <div className="relative w-full h-72 md:h-[400px] rounded-xl overflow-hidden">
           <img
-            src="/images/business-photo.jpg"
+            src="/images/solar.webp"
             alt="Business Solar"
             className="absolute inset-0 w-full h-full object-cover"
           />
