@@ -2,10 +2,11 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Header from './Header';
 
-const slides = ['/images/slide1.png', '/images/slide2.jpg', '/images/slide3.jpg'];
+const slides = ['/images/slide1.png', '/images/bg-2.webp', '/images/slide3.jpg'];
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
@@ -27,12 +28,17 @@ export default function HeroSection() {
             className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${
               i === current ? 'translate-y-0' : 'translate-y-full'
             }`}
-            style={{
-              backgroundImage: `url(${src})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
+          >
+            <Image
+              src={src}
+              alt={`Slide ${i + 1}`}
+              fill
+              quality={80} // <-- здесь контролируешь качество (0–100)
+              priority={i === 0} // ускоряет загрузку первого кадра
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+          </div>
         ))}
       </div>
 

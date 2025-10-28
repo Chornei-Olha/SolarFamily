@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import Header from './Header';
 
-const slides = ['/images/slide1.png', '/images/slide2.jpg', '/images/slide3.jpg'];
+const slides = ['/images/bg-6.webp', '/images/bg-8.webp', '/images/bg-3.webp'];
 
 export default function HeroBusiness() {
   const [current, setCurrent] = useState(0);
@@ -47,28 +47,13 @@ export default function HeroBusiness() {
 
       {/* Контент */}
       <div className="container mx-auto relative z-10 flex flex-col h-full text-white py-6 sm:py-8 lg:py-10 px-6 sm:px-8 lg:px-10">
-        {/* Низ: соцсети */}
-        {/* <div className="absolute top-2/3 left-6 -translate-y-1/2 flex flex-col gap-4 text-white/60 z-20">
-          <a href="#" className="hover:text-white">
-            Fb.
-          </a>
-          <a href="#" className="hover:text-white">
-            Tw.
-          </a>
-          <a href="#" className="hover:text-white">
-            Ig.
-          </a>
-          <a href="#" className="hover:text-white">
-            Pl.
-          </a>
-        </div> */}
         {/* Центр: текст */}
-        <div className="flex-1 flex items-center sm:items-end">
-          <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 w-[90vw] text-center font-actor font-normal">
+        <div className="flex-1 flex flex-col items-center justify-end text-center mb-16">
+          <div className="max-w-4xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 font-actor font-normal">
               Сонячна електростанція для Вашого бізнесу{' '}
             </h2>{' '}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest w-[90vw] text-center font-actor font-normal">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-widest font-actor font-normal">
               Зниження залежності від комунальних енергопостачальних компаній, економія на рахунках
               за електроенергію та зменшення впливу на довкілля шляхом використання відновлювального
               джерела енергії.

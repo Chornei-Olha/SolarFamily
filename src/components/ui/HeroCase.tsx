@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import Header from './Header';
 
-const slides = ['/images/slide1.png', '/images/slide2.jpg', '/images/slide3.jpg'];
+const slides = ['/images/bg-4.webp', '/images/bg-9.webp', '/images/bg-10.webp'];
 
 export default function HeroCase() {
   const [current, setCurrent] = useState(0);

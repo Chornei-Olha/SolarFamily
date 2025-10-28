@@ -14,37 +14,37 @@ const cases: CaseItem[] = [
   {
     id: 1,
     title: 'Сонячна електростанція - єдине надійне рішення при відключенні електроенергії',
-    image: '/images/slide1.png',
+    image: '/images/bg-4.webp',
     link: '/case/1',
   },
   {
     id: 2,
     title: 'Сонячна електростанція - єдине надійне рішення при відключенні електроенергії',
-    image: '/images/slide2.jpg',
+    image: '/images/bg-4.webp',
     link: '/case/2',
   },
   {
     id: 3,
     title: 'Сонячна електростанція - єдине надійне рішення при відключенні електроенергії',
-    image: '/images/slide3.jpg',
+    image: '/images/bg-4.webp',
     link: '/case/3',
   },
   {
     id: 4,
     title: 'Сонячна електростанція - єдине надійне рішення при відключенні електроенергії',
-    image: '/images/slide1.png',
+    image: '/images/bg-4.webp',
     link: '/case/4',
   },
   {
     id: 5,
     title: 'Сонячна електростанція - єдине надійне рішення при відключенні електроенергії',
-    image: '/images/slide2.jpg',
+    image: '/images/bg-4.webp',
     link: '/case/5',
   },
   {
     id: 6,
     title: 'Сонячна електростанція - єдине надійне рішення при відключенні електроенергії',
-    image: '/images/slide3.jpg',
+    image: '/images/bg-4.webp',
     link: '/case/6',
   },
 ];
@@ -59,8 +59,8 @@ export default function CaseGrid() {
             <Image
               src={item.image}
               alt={item.title}
-              width={500}
-              height={300}
+              width={1600}
+              height={900}
               className="w-full h-[300px] sm:h-[440px] lg:h-[640px] object-cover grayscale group-hover:grayscale-0 transition duration-500"
             />
 
