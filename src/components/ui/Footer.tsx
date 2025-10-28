@@ -72,7 +72,7 @@ export default function Footer() {
 
         {/* Картинка справа */}
         <div className="col-span-1 relative w-full h-[300px] md:h-[400px]">
-          <Image src="/images/worker.webp" alt="Будівля" fill className="object-cover" />
+          <Image src="/images/bg-13.webp" alt="SolarPanel" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/40 rounded-lg" />
         </div>
       </div>{' '}

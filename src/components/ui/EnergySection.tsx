@@ -7,8 +7,8 @@ export default function EnergySection() {
         {/* Левая картинка */}
         <div className="relative w-full h-[300px] md:h-[400px]">
           <Image
-            src="/images/building-1.png"
-            alt="Будівля"
+            src="/images/bg-14.webp"
+            alt="SolarPanel"
             fill
             className="object-cover rounded-lg"
           />
