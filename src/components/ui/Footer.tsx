@@ -3,7 +3,10 @@ import { Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white">
+    <footer
+      id="footer"
+      className="container mx-auto py-6 sm:py-8 md:py-14 lg:py-16 px-6 sm:px-8 lg:px-10 text-white"
+    >
       {/* Нижняя часть с картинкой справа */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 font-normal items-stretch">
         {/* Текст слева */}
@@ -26,15 +29,15 @@ export default function Footer() {
           </a>
           <div className="flex flex-col gap-8">
             {/* Меню */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               <a href="/">Головна</a>
               <a href="/case">Проєкти</a>
               <a href="/aboutProduct">Новини</a>
               <a href="/business">Для партнерів</a>
               <a href="/about">Про компанію</a>
-              <a href="#">Послуги</a>
-              <a href="#">Контакти</a>
-              <a href="#">Вакансії</a>
+              {/* <a href="#">Послуги</a> */}
+              <a href="#footer">Контакти</a>
+              <a href="/hyring">Вакансії</a>
             </div>
 
             {/* Соцсети */}
