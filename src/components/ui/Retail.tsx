@@ -28,7 +28,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: '«Модус Форвард»',
-    description: 'Потужність по сонячних фотомодулях: 73,75 кВт',
+    description: 'Потужність: 73,75 кВт',
     image: '/projects/project3.jpg',
     href: '/modusForward',
   },
@@ -84,7 +84,7 @@ const projects: Project[] = [
   {
     id: 11,
     title: '«Кронос Агро»',
-    description: 'Потужність системи зберігання енергії (акумулятори): 102,4 кВт',
+    description: 'Потужність: 102,4 кВт',
     image: '/projects/project9.jpg',
     href: '/kronosAgro',
   },
